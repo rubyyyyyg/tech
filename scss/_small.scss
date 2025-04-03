@@ -24,7 +24,7 @@ body {
 #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 50px auto 44px;
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;
@@ -37,11 +37,63 @@ header {
 
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#hamburgerBtn {
+    position: relative;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    .top, .bottom {
+        position: absolute;
+        height: 2px;
+        width: 50%;
+        left: 25%;
+        background-color: #777;
+        transition: all .3s ease;
+    }
+    .top {
+        top: 33%;
+    }
+    .bottom {
+        top: 62%;
+    }
+}
 
+#hamburgerBtn.open {
+    .top {
+        transform: rotate(45deg);
+        top: 48%;
+        width: 60%;
+        left: 20%;
+    }
+    .bottom {
+        transform: rotate(-45deg);
+        top: 48%;
+        width: 60%;
+        left: 20%;
+    }
+}
 
-
-
-
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    li a {
+        color: $primaryColor;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+}
+nav ul.open {
+    display: block;
+}
 
 
 
