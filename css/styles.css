@@ -408,6 +408,99 @@ main p {
   line-height: 150%;
 }
 
+.hero {
+  position: relative;
+}
+.hero div {
+  position: absolute;
+  top: 0;
+  color: white;
+  left: 0;
+  right: 0;
+  padding: 0 5px;
+  margin: 0;
+  background: linear-gradient(90deg, rgb(81, 41, 41) 0%, rgba(72, 38, 38, 0.464) 20%);
+}
+.hero div h3 {
+  text-shadow: 0 0 2px gray;
+}
+.hero div p {
+  text-shadow: 0 0 2px gray;
+  color: white;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.hero video {
+  width: 100%;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  padding: 5px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: #4CAF50; /* Front side color */
+}
+
+.card-back {
+  background-color: #7c1d47; /* Back side color */
+  transform: rotateY(180deg); /* Rotate the back side initially */
+}
+
+/* Additional styling for text on the back */
+.card-back p {
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+
+#one {
+  background-image: url(../images/female.png);
+  background-size: cover;
+}
+
+#two {
+  background-image: url(../images/male.png);
+  background-size: cover;
+}
+
+#three {
+  background-image: url(../images/fem.png);
+  background-size: cover;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #1d295f;
