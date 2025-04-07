@@ -314,7 +314,7 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 300;
   min-width: 320px;
 }
@@ -334,7 +334,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: rgb(81, 41, 41);
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -381,14 +381,14 @@ nav ul {
   display: none;
 }
 nav ul li a {
-  color: #1d295f;
+  color: rgb(81, 41, 41);
   display: block;
   padding: 0.75rem 10px;
   text-decoration: none;
   border-bottom: 1px solid #ccc;
 }
 nav ul li.active a {
-  color: #7c1d47;
+  color: #617a62;
 }
 
 nav ul.open {
@@ -399,7 +399,7 @@ nav ul.open {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #617a62;
   font-weight: 300;
 }
 main p {
@@ -474,7 +474,7 @@ main p {
 }
 
 .card-back {
-  background-color: #7c1d47; /* Back side color */
+  background-color: #617a62; /* Back side color */
   transform: rotateY(180deg); /* Rotate the back side initially */
 }
 
@@ -503,7 +503,7 @@ main p {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: rgb(81, 41, 41);
 }
 
 footer {
@@ -533,7 +533,7 @@ footer a {
     transition: background 0.5s linear;
   }
   nav ul li a:hover {
-    background-color: #1d295f;
+    background-color: rgb(81, 41, 41);
     color: white;
   }
 }
