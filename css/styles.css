@@ -473,7 +473,7 @@ main p {
   background-color: #4CAF50; /* Front side color */
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: black;
 }
 
@@ -493,19 +493,16 @@ main p {
 #one {
   background-image: url(../images/female.png);
   background-size: cover;
-  filter: contrast(150%);
 }
 
 #two {
   background-image: url(../images/male.png);
   background-size: cover;
-  filter: contrast(150%);
 }
 
 #three {
   background-image: url(../images/fem.png);
   background-size: cover;
-  filter: contrast(150%);
 }
 
 /* --------------------------- FOOTER --------------------------- */
