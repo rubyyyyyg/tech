@@ -158,6 +158,7 @@ main {
     transform-style: preserve-3d;
     transition: transform 0.5s;
     position: relative;
+    
   }
   
   .card:hover {
@@ -198,17 +199,17 @@ main {
 #one {
     background-image: url(../images/female.png);
     background-size: cover;
-    filter: grayscale(60%);
+    filter: contrast(150%);
 }
 #two {
     background-image: url(../images/male.png);
     background-size: cover;
-    filter: grayscale(60%);
+    filter: contrast(150%);
 }
 #three {
     background-image: url(../images/fem.png);
     background-size: cover;
-    filter: grayscale(60%);
+    filter: contrast(150%);
 }
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
